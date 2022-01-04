@@ -4,6 +4,8 @@ public class BitwiseComplement {
 
     public int bitwiseComplement(int n) {
         StringBuilder sb = new StringBuilder();
+        if (n ==0)
+            return 1;
         while (n > 0) {
             int value = n % 2;
             if (value == 0)
@@ -14,13 +16,13 @@ public class BitwiseComplement {
             n = n / 2;
         }
         sb.reverse();
-        Integer reverseInt = Integer.parseInt(sb.toString());
-        String value = String.valueOf(reverseInt);
         int returnValue = 0;
-        for (int i = 0; i < value.length(); i++) {
-            if (value.charAt(i) == '1') {
-                returnValue += Math.pow(2, i);
+        int count = 0;
+        for (int i = sb.length()-1; i >= 0; i--) {
+            if (sb.charAt(i) == '1') {
+                returnValue += Math.pow(2, count);
             }
+            count++;
         }
         return returnValue;
     }
