@@ -2,36 +2,38 @@ package main;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SplittableRandom;
 
 public class PalindromePartitioning {
-    public List<List<String>> partition(String s) {
-        String subString;
-        List<String> childList = new ArrayList<>();
-        List<String> childList1 = new ArrayList<>();
-        List<List<String>> parentList = new ArrayList<>();
-        for (int i = 0; i < s.length(); i++) {
-            childList.add("" + s.charAt(i));
-            for (int j = s.length() - 1; j > i; j--) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    subString = s.substring(i, j + 1);
-                    boolean isPoly = true;
-                    for (int k = 0; k < subString.length() - 1; k++) {
-                        if (subString.charAt(k) != subString.charAt(subString.length() - 1-k)) {
-                            isPoly = false;
-                            break;
-                        }
-                    }
-                    if (isPoly)
-                        childList1.add(subString);
 
-                }
+    public List<List<String>> solution(String s) {
+        List<List<String>> result = new ArrayList<>();
+        helper(s, new ArrayList<>(), result);
+        return result;
+    }
 
+    private void helper(String s, List<String> currList, List<List<String>> result) {
+        if (s.isEmpty())
+            result.add(currList);
+
+        for (int i =1; i<=s.length(); i++) {
+            String left = s.substring(0, i);
+            String right = s.substring(i);
+            if (isPalindrome(left)) {
+                List<String> copyList = new ArrayList<>(currList);
+                copyList.add(left);
+                helper(right, copyList, result);
             }
-
         }
-        parentList.add(childList);
-        if (!childList1.isEmpty())
-            parentList.add(childList1);
-        return parentList;
+    }
+
+    /*rajabajar*/
+    boolean isPalindrome(String s) {
+        int l = 0; int r = s.length()-1;
+        while (l <= r && s.charAt(r) == s.charAt(l)) {
+            l++;
+            r--;
+        }
+        return l>=r;
     }
 }
