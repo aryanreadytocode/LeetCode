@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.SplittableRandom;
 
+/**/
+
 public class PalindromePartitioning {
 
     public List<List<String>> solution(String s) {
