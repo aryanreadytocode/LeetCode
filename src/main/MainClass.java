@@ -24,6 +24,8 @@ public class MainClass {
                         {2, 5}};
 
 //        System.out.println("Maximum number: " + new CherryPick2().cherryPickup(grid));
-        System.out.println("robot is in circle: " + new RobotBoundedInCircle().isRobotBounded("GGLLGG"));
+//        System.out.println("robot is in circle: " + new RobotBoundedInCircle().isRobotBounded("GGLLGG"));
+
+        System.out.println("Binary Some: " + new AddBinary().solution("1111", "1111"));
     }
 }
