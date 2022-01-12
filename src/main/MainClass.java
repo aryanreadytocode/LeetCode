@@ -26,6 +26,17 @@ public class MainClass {
 //        System.out.println("Maximum number: " + new CherryPick2().cherryPickup(grid));
 //        System.out.println("robot is in circle: " + new RobotBoundedInCircle().isRobotBounded("GGLLGG"));
 
-        System.out.println("Binary Some: " + new AddBinary().solution("1111", "1111"));
+//        System.out.println("Binary Some: " + new AddBinary().solution("1111", "1111"));
+
+        InsertIntoBinary.Node node = new InsertIntoBinary().insertIntoNode(null, 8);
+        new InsertIntoBinary().insertIntoNode(node, 3);
+        new InsertIntoBinary().insertIntoNode(node, 6);
+        new InsertIntoBinary().insertIntoNode(node, 10);
+        new InsertIntoBinary().insertIntoNode(node, 4);
+        new InsertIntoBinary().insertIntoNode(node, 7);
+        new InsertIntoBinary().insertIntoNode(node, 1);
+        new InsertIntoBinary().insertIntoNode(node, 14);
+        new InsertIntoBinary().insertIntoNode(node, 13);
+        System.out.println("Node: "+node);
     }
 }
