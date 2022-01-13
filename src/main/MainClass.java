@@ -1,5 +1,7 @@
 package main;
 
+import java.awt.*;
+
 public class MainClass {
 
     public static void main(String[] args) {
@@ -28,15 +30,17 @@ public class MainClass {
 
 //        System.out.println("Binary Some: " + new AddBinary().solution("1111", "1111"));
 
-        InsertIntoBinary.Node node = new InsertIntoBinary().insertIntoNode(null, 8);
-        new InsertIntoBinary().insertIntoNode(node, 3);
-        new InsertIntoBinary().insertIntoNode(node, 6);
-        new InsertIntoBinary().insertIntoNode(node, 10);
-        new InsertIntoBinary().insertIntoNode(node, 4);
-        new InsertIntoBinary().insertIntoNode(node, 7);
-        new InsertIntoBinary().insertIntoNode(node, 1);
-        new InsertIntoBinary().insertIntoNode(node, 14);
-        new InsertIntoBinary().insertIntoNode(node, 13);
-        System.out.println("Node: "+node);
+//        InsertIntoBinary.Node node = new InsertIntoBinary().insertIntoNode(null, 8);
+//        new InsertIntoBinary().insertIntoNode(node, 3);
+//        new InsertIntoBinary().insertIntoNode(node, 6);
+//        new InsertIntoBinary().insertIntoNode(node, 10);
+//        new InsertIntoBinary().insertIntoNode(node, 4);
+//        new InsertIntoBinary().insertIntoNode(node, 7);
+//        new InsertIntoBinary().insertIntoNode(node, 1);
+//        new InsertIntoBinary().insertIntoNode(node, 14);
+//        new InsertIntoBinary().insertIntoNode(node, 13);
+//        System.out.println("Node: "+node);
+        int[][]  points ={{10,16},{2,8},{1,6},{7,12}};
+        System.out.println("No of arrow count: "+ new MinimumNoOfArrowToBurstBaloon().solution(points));
     }
 }
