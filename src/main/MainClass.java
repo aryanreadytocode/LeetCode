@@ -40,7 +40,20 @@ public class MainClass {
 //        new InsertIntoBinary().insertIntoNode(node, 14);
 //        new InsertIntoBinary().insertIntoNode(node, 13);
 //        System.out.println("Node: "+node);
-        int[][]  points ={{10,16},{2,8},{1,6},{7,12}};
-        System.out.println("No of arrow count: "+ new MinimumNoOfArrowToBurstBaloon().solution(points));
+//        int[][]  points ={{10,16},{2,8},{1,6},{7,12}};
+//        System.out.println("No of arrow count: "+ new MinimumNoOfArrowToBurstBaloon().solution(points));
+
+//        System.out.println("String to Integer : "+new StringToInteger().myAtoi("+1"));
+
+//        int[] arr = {100,-23,-23,404,100,23,23,23,3,404};
+//        System.out.println("Number of steps : "+new JumpGameIV().minJumps(arr));
+//        String pattern = "abba";
+        String pattern = "ab";
+//        String array = "cat dog dog cat";
+//        String array = "dog dog";
+//        System.out.println("Matched Pattern : "+new WordPattern().wordPattern(pattern, array));
+//[1,0,0,0,0,0,1]
+        int[] array ={0,0,0,1,0,1}; int n = 2;
+        System.out.println("Can flower be planted: "+ new CanPlaceFlower().canPlaceFlowers(array, n));
     }
 }
