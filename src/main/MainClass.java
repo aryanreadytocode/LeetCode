@@ -53,7 +53,15 @@ public class MainClass {
 //        String array = "dog dog";
 //        System.out.println("Matched Pattern : "+new WordPattern().wordPattern(pattern, array));
 //[1,0,0,0,0,0,1]
-        int[] array ={0,0,0,1,0,1}; int n = 2;
-        System.out.println("Can flower be planted: "+ new CanPlaceFlower().canPlaceFlowers(array, n));
+//        int[] array ={0,0,0,1,0,1}; int n = 2;
+//        System.out.println("Can flower be planted: "+ 1/2);
+//        int[] gas = {1,2,3,4,5};
+//        int[] cost = {3,4,5,1,2};
+//        Output: 3
+//        System.out.println("Starting index:"+new GasStation().canCompleteCircuit(gas, cost));
+
+        int number = 8;
+        System.out.println("Alice won: "+ new StoneGameIV().winnerSquareGame(number));
+
     }
 }
