@@ -60,8 +60,11 @@ public class MainClass {
 //        Output: 3
 //        System.out.println("Starting index:"+new GasStation().canCompleteCircuit(gas, cost));
 
-        int number = 8;
-        System.out.println("Alice won: "+ new StoneGameIV().winnerSquareGame(number));
+//        int number = 8;
+//        System.out.println("Alice won: "+ new StoneGameIV().winnerSquareGame(number));
+
+        String word = "ffffF";
+        System.out.println("Valid String : "+ new DetectCapital().detectCapitalUse(word));
 
     }
 }
