@@ -63,8 +63,13 @@ public class MainClass {
 //        int number = 8;
 //        System.out.println("Alice won: "+ new StoneGameIV().winnerSquareGame(number));
 
-        String word = "ffffF";
-        System.out.println("Valid String : "+ new DetectCapital().detectCapitalUse(word));
+//        String word = "ffffF";
+//        System.out.println("Valid String : "+ new DetectCapital().detectCapitalUse(word));
+
+//        int[] prices = {7,6,4,3,1};
+//        int[] prices = {7,1,5,3,6,4};
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println("Max Profit: "+new BestTimeToBuyAndSellStock().maxProfit(prices));
 
     }
 }
