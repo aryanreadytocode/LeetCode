@@ -1,6 +1,7 @@
 package main;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class MainClass {
 
@@ -68,8 +69,20 @@ public class MainClass {
 
 //        int[] prices = {7,6,4,3,1};
 //        int[] prices = {7,1,5,3,6,4};
-        int[] prices = {7,1,5,3,6,4};
-        System.out.println("Max Profit: "+new BestTimeToBuyAndSellStock().maxProfit(prices));
-
+//        int[] prices = {1,2,3,2,1};
+//        int[] prices = {0,2,9};
+//        System.out.println("max diff : "+new ScalerSolution().solve(prices));
+//        System.out.println("Max Profit: "+new BestTimeToBuyAndSellStock().maxProfit(prices));
+        /*int num = 2;
+        int pow = 3;
+        int deno = 3;*/
+        int num = 5;
+        int pow = 8;
+        int deno = 3;
+        System.out.println("pow "+new ScalerExponential().pow(num, pow, deno));
+//        int[] A = {1, 2, 2, 1};
+//        int[] B = {2,3,1,2};
+//        System.out.println("pair: "+ Arrays.toString(new ScalerCommonElement().solve(A, B)));
+//
     }
 }
